@@ -1,0 +1,19 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.5.30'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven {
+        url "https://maven.pkg.jetbrains.space/public/p/compose/dev"
+    }
+    google()
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib"
+    implementation "org.jetbrains.compose.runtime:runtime:1.0.0-alpha4-build331"
+}
